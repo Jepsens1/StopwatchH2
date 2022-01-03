@@ -1,0 +1,15 @@
+﻿<Window x:Class="StopwatchH2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StopwatchH2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel x:Name="MainPanel">
+        <Button Click="StartButton_Click" Content="StartTimer" x:Name="StartButton" HorizontalAlignment="Left" Margin="110,124,0,0" VerticalAlignment="Top"/>
+        <Button Click="StopButton_Click" Content="StopTimer" x:Name="StopButton" HorizontalAlignment="Left" Margin="185,124,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NumberFromTextBox" HorizontalAlignment="Left" Margin="110,81,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="133" Text="Set timer(minutes)"/>
+        <Label x:Name="CountLabel" Content="0:00"/>
+    </StackPanel>
+</Window>
